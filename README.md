@@ -1,5 +1,3 @@
-# Readme
-
 # MWeb mweb-stuart-theme Theme
 
 mweb-stuart-theme 图示：
