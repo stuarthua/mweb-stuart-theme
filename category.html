@@ -1,0 +1,34 @@
+<div class="wrapper">
+  <div class="content" id="main-content">
+    <div class="content-wrapper">
+      <div class="page">
+        <div class="page-main">
+          <div class="archive-main">
+            <div class="archive-group">
+              {% for p in posts %}
+              <div class="archive-item">
+                <div class="archive-date">{{ p.date }}</div>
+                <div class="archive-title">
+                  <a href="{{ p.url }}">{{ p.title }}</a>
+                </div>
+              </div>
+              {% /for %}
+              <div class="row">
+                <span class="text-left">
+                  {% if prevPageUrl.length %}
+                  <a href="{{ prevPageUrl }}">&laquo; Prev Page</a>
+                  {% /if %}
+                </span>
+                <span class="text-right">
+                  {% if nextPageUrl.length %}
+                  <a class="text-right" href="{{ nextPageUrl }}">&raquo; Next Page</a>
+                  {% /if %}
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

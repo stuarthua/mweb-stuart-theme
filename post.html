@@ -1,0 +1,51 @@
+<div class="progress-bar"></div>
+<div class="wrapper blog-wrapper content-wrapper">
+  <div class="article">
+    <div class="article-head">
+      <div class="article-title">
+        {{ post.title }}
+      </div>
+      <div class="article-info">
+        {{ post.date }} |
+        <span class="categories">
+          {% for cat in post.cats %}
+          <a href="{{ cat.url }}" title="{{ cat.name }}"> {{ cat.name }} </a>
+          {% /for %}
+        </span>
+      </div>
+    </div>
+    <div class="article-main">
+      {{ post.content }}
+      <div class="row">
+        <span class="text-left">
+          {% if postNav.prev %}
+          <a href="{{ postNav.prev.url }}">&laquo; {{ postNav.prev.title }}</a>
+          {% /if %}
+        </span>
+        <span class="text-right">
+            {% if postNav.next %}
+            <a href="{{ postNav.next.url }}">&laquo; {{ postNav.next.title }}</a>
+            {% /if %}
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+  document.addEventListener('scroll', function (e) {
+    var wrapper = document.querySelector('.blog-wrapper');
+    var article = document.querySelector('.article');
+    var docHeight = wrapper.offsetHeight;
+    var maxHeight = docHeight - window.innerHeight - article.offsetTop;
+    var scrollTop = window.scrollY || window.scollTop || document.getElementsByTagName("html")[0].scrollTop;
+    var ratio = scrollTop / maxHeight;
+    var progressBar = document.querySelector('.progress-bar');
+    var winWidth = window.innerWidth;
+    if (ratio <= 1.0) {
+      progressBar.style.width = winWidth * ratio + 'px';
+    }
+    else {
+      progressBar.style.width = winWidth + 'px';
+    }
+  });
+</script>

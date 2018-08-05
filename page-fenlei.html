@@ -1,0 +1,19 @@
+<div class="wrapper">
+  <div class="content" id="main-content">
+    <div class="content-wrapper">
+      <div class="page">
+        <div class="page-main">
+          {% for p in categoriesTree %}
+          <div class="archive-group">
+            <a class="category_title" href="{{ p.url }}" title="{{ p.name }}">
+              <span class="tag fa fa-briefcase listing-seperator" id="{{ p.name }}">
+                <span class="category-text">{{ p.name }}</span>
+              </span>
+            </a>
+          </div>
+          {% /for %}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

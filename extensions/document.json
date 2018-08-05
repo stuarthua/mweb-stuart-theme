@@ -1,0 +1,14 @@
+[
+   {
+      "title":"seo KW",
+      "variableName":"seo_keywords",
+      "inputFieldHeight":44,
+      "exampleText":"seo keywords"
+   },
+   {
+      "title":"seo Des",
+      "variableName":"seo_des",
+      "inputFieldHeight":66,
+      "exampleText":"seo description"
+   }
+]

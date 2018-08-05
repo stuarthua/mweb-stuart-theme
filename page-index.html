@@ -1,0 +1,20 @@
+<div class="wrapper">
+  <div class="content" id="main-content">
+    <div class="content-wrapper">
+      <div class="page">
+        <div class="page-main">
+          <div class="archive-main">
+            {% for p in posts %}
+              <div class="archive-item">
+                <div class="archive-date">{{ p.date }}</div>
+                <div class="archive-title">
+                  <a href="{{ p.url }}">{{ p.title }}</a>
+                </div>
+              </div>
+            {% /for %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

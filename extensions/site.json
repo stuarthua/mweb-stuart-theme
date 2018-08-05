@@ -1,0 +1,56 @@
+[
+   {
+      "title":"site_author",
+      "variableName":"site_author",
+      "inputFieldHeight":22,
+      "exampleText":"Your Text"
+   },
+   {
+      "title":"site_time",
+      "variableName":"site_time",
+      "inputFieldHeight":22,
+      "exampleText":"Your Text"
+   },
+   {
+      "title":"site_favicon",
+      "variableName":"site_favicon",
+      "inputFieldHeight":22,
+      "exampleText":"Your Image Url"
+   },
+   {
+      "title":"site_contact_email",
+      "variableName":"site_contact_email",
+      "inputFieldHeight":22,
+      "exampleText":"Your Text"
+   },
+   {
+      "title":"site_contact_github",
+      "variableName":"site_contact_github",
+      "inputFieldHeight":22,
+      "exampleText":"Your Text"
+   },
+   {
+      "title":"site_contact_stack_overflow",
+      "variableName":"site_contact_stack_overflow",
+      "inputFieldHeight":22,
+      "exampleText":"Your Text"
+   },
+   {
+      "title":"site_contact_instagram",
+      "variableName":"site_contact_instagram",
+      "inputFieldHeight":22,
+      "exampleText":"Your Text"
+   },
+   {
+      "title":"site_contact_twitter",
+      "variableName":"site_contact_twitter",
+      "inputFieldHeight":22,
+      "exampleText":"Your Text"
+   },
+   {
+      "title":"site_contact_home",
+      "variableName":"site_contact_home",
+      "inputFieldHeight":22,
+      "exampleText":"Your Text"
+   }
+]

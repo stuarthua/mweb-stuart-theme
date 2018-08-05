@@ -1,0 +1,30 @@
+<footer class="wrapper" id="contact">
+  <div class="content content-wrapper">
+    <div class="contact">
+      <div class="contact-links">
+        <a href="feed.xml"><i class="fa fa-rss"></i></a>
+        {% if ext_site_contact_email.length %}
+        <a href="mailto:{{ ext_site_contact_email }}"><i class="fa fa-envelope-o"></i></a>
+        {% /if %}
+        {% if ext_site_contact_github.length %}
+        <a href="https://github.com/{{ ext_site_contact_github }}"><i class="fa fa-github"></i></a>
+        {% /if %}
+        {% if ext_site_contact_stack_overflow.length %}
+        <a href="https://stackoverflow.com/users/{{ ext_site_contact_stack_overflow }}"><i class="fa fa-stack-overflow"></i></a>
+        {% /if %}
+        {% if ext_site_contact_instagram.length %}
+        <a href="https://instagram.com/{{ ext_site_contact_instagram }}"><i class="fa fa-instagram"></i></a>
+        {% /if %}
+        {% if ext_site_contact_twitter.length %}
+        <a href="https://twitter.com/{{ ext_site_contact_twitter }}"><i class="fa fa-twitter"></i></a>
+        {% /if %}
+        {% if ext_site_contact_home.length %}
+        <a href="https://{{ ext_site_contact_home }}"><i class="fa fa-home"></i></a>
+        {% /if %}
+      </div>
+      <div class="contact-left">
+        <a href="{{ siteURL }}">{% if ext_site_author.length %}{{ ext_site_author }}{% /if %}</a> &copy; {% if ext_site_time.length %}{{ ext_site_time }}{% /if %}
+      </div>
+    </div>
+  </div>
+</footer>
