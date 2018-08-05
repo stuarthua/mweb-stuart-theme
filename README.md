@@ -57,7 +57,18 @@ git clone https://github.com/stuarthua/mweb-stuart-theme.git
 
 在 MWeb 静态网站文件夹中，新建文件
 
-* * 文件中写入：`# About`
+* 文件中写入：
+  ```
+  # About
+  
+  <div class="page-title">About</div>
+  
+  Hello, I am Stuart Hua.
+  
+  <div class="page-title">License</div>
+  
+  * All the blogs are licensed under a [CC BY-NC-ND 4.0]  (http://creativecommons.org/licenses/by-nc-nd/4.0/) license.
+  ```
 * 设置 HTML 文件名：about （注意：不可更改）
 * 勾选 `是否页面(Is Page)`
 
