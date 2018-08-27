@@ -1,5 +1,7 @@
 # MWeb mweb-stuart-theme Theme
 
+> 为 [MWeb](https://zh.mweb.im/) 自定义的主题
+
 mweb-stuart-theme 图示：
 
 ![1533480917765](http://res.stuarthua.com/1533480917765.png)
