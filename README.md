@@ -4,8 +4,6 @@ mweb-stuart-theme 图示：
 
 ![1533480917765](http://res.stuarthua.com/1533480917765.png)
 
-![1533480917766](http://res.stuarthua.com/1533480917766.jpg)
-
 ## 安装 (Install)
 
 ```
